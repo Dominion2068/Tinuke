@@ -1,20 +1,20 @@
 import streamlit as st
 from PIL import Image
 import requests
-from streamlit_lottie import st_lottie
+# from streamlit_lottie import st_lottie
 import pandas as pd
 
 icon = Image.open('imag.png')
 st.set_page_config(layout = 'wide', page_title="Self-Development",page_icon= icon)
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def load_lottieurl(url: str):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
-lottie_shops = load_lottieurl('https://assets7.lottiefiles.com/packages/lf20_j2rjqphu.json')
-st_lottie(lottie_shops, height=200)
+# lottie_shops = load_lottieurl('https://assets7.lottiefiles.com/packages/lf20_j2rjqphu.json')
+# st_lottie(lottie_shops, height=200)
 st.header('Study Interface')
 # col1, col2, col3, = st.columns([0.5, 1, 0.5])
 # with col1:
